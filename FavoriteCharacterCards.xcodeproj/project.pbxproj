@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		233E1D9F276BDD8200A7CFCF /* FavoriteCharacterCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233E1D9E276BDD8200A7CFCF /* FavoriteCharacterCardsApp.swift */; };
-		233E1DA1276BDD8200A7CFCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233E1DA0276BDD8200A7CFCF /* ContentView.swift */; };
+		233E1DA1276BDD8200A7CFCF /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233E1DA0276BDD8200A7CFCF /* LibraryView.swift */; };
 		233E1DA3276BDD8400A7CFCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233E1DA2276BDD8400A7CFCF /* Assets.xcassets */; };
 		233E1DA6276BDD8400A7CFCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233E1DA5276BDD8400A7CFCF /* Preview Assets.xcassets */; };
+		233E1DB1276BDE3F00A7CFCF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 233E1DB0276BDE3F00A7CFCF /* data.json */; };
+		233E1DB3276BDFBC00A7CFCF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233E1DB2276BDFBC00A7CFCF /* Character.swift */; };
+		233E1DB5276BDFEE00A7CFCF /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233E1DB4276BDFEE00A7CFCF /* CharacterModel.swift */; };
+		233E1DB7276BE3E400A7CFCF /* CharacterPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233E1DB6276BE3E400A7CFCF /* CharacterPreview.swift */; };
+		233E1DB9276BE90500A7CFCF /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233E1DB8276BE90500A7CFCF /* CharacterDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		233E1D9B276BDD8200A7CFCF /* FavoriteCharacterCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteCharacterCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		233E1D9E276BDD8200A7CFCF /* FavoriteCharacterCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCharacterCardsApp.swift; sourceTree = "<group>"; };
-		233E1DA0276BDD8200A7CFCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		233E1DA0276BDD8200A7CFCF /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		233E1DA2276BDD8400A7CFCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		233E1DA5276BDD8400A7CFCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		233E1DB0276BDE3F00A7CFCF /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		233E1DB2276BDFBC00A7CFCF /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		233E1DB4276BDFEE00A7CFCF /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		233E1DB6276BE3E400A7CFCF /* CharacterPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPreview.swift; sourceTree = "<group>"; };
+		233E1DB8276BE90500A7CFCF /* CharacterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				233E1D9E276BDD8200A7CFCF /* FavoriteCharacterCardsApp.swift */,
-				233E1DA0276BDD8200A7CFCF /* ContentView.swift */,
+				233E1DAF276BDE1D00A7CFCF /* Resources */,
+				233E1DAE276BDE1400A7CFCF /* ViewModels */,
+				233E1DAD276BDE0D00A7CFCF /* Models */,
+				233E1DAC276BDE0500A7CFCF /* Views */,
 				233E1DA2276BDD8400A7CFCF /* Assets.xcassets */,
 				233E1DA4276BDD8400A7CFCF /* Preview Content */,
 			);
@@ -65,6 +78,40 @@
 				233E1DA5276BDD8400A7CFCF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		233E1DAC276BDE0500A7CFCF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				233E1DA0276BDD8200A7CFCF /* LibraryView.swift */,
+				233E1DB6276BE3E400A7CFCF /* CharacterPreview.swift */,
+				233E1DB8276BE90500A7CFCF /* CharacterDetails.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		233E1DAD276BDE0D00A7CFCF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				233E1DB2276BDFBC00A7CFCF /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		233E1DAE276BDE1400A7CFCF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				233E1DB4276BDFEE00A7CFCF /* CharacterModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		233E1DAF276BDE1D00A7CFCF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				233E1DB0276BDE3F00A7CFCF /* data.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				233E1DA6276BDD8400A7CFCF /* Preview Assets.xcassets in Resources */,
+				233E1DB1276BDE3F00A7CFCF /* data.json in Resources */,
 				233E1DA3276BDD8400A7CFCF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				233E1DA1276BDD8200A7CFCF /* ContentView.swift in Sources */,
+				233E1DB3276BDFBC00A7CFCF /* Character.swift in Sources */,
+				233E1DB5276BDFEE00A7CFCF /* CharacterModel.swift in Sources */,
+				233E1DB9276BE90500A7CFCF /* CharacterDetails.swift in Sources */,
+				233E1DB7276BE3E400A7CFCF /* CharacterPreview.swift in Sources */,
+				233E1DA1276BDD8200A7CFCF /* LibraryView.swift in Sources */,
 				233E1D9F276BDD8200A7CFCF /* FavoriteCharacterCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

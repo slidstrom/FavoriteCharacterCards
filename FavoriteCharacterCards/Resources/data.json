@@ -1,0 +1,45 @@
+[
+    {
+        "id":1,
+        "name":"Fox",
+        "image":"fox",
+        "isFavorite":true
+    
+    },
+    {
+        "id":2,
+        "name":"Link",
+        "image":"link",
+        "isFavorite":false
+    },
+    {
+        "id":3,
+        "name":"Sora",
+        "image":"sora",
+        "isFavorite":false
+    },
+    {
+        "id":4,
+        "name":"Roy",
+        "image":"roy",
+        "isFavorite":false
+    },
+    {
+        "id":5,
+        "name":"Sonic",
+        "image":"sonic",
+        "isFavorite":false
+    },
+    {
+        "id":6,
+        "name":"Pikachu",
+        "image":"pikachu",
+        "isFavorite":false
+    },
+    {
+        "id":7,
+        "name":"Mario",
+        "image":"mario",
+        "isFavorite":false
+    }
+]
